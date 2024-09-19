@@ -39,7 +39,9 @@ Video Processing: The object detection model was successfully applied to real-ti
 #Future Improvements
 
 Bounding Box Regression: The current implementation displays only class labels and confidence scores. Future improvements could involve implementing bounding box regression for accurate localization of objects.
+
 Multi-object Detection: Enhancements such as YOLO (You Only Look Once) or SSD (Single Shot Multibox Detector) could be implemented to allow detection of multiple objects in a single frame.
+
 Performance Optimization: Optimizing the model's architecture and GPU usage could reduce the processing time for each video frame, enabling faster real-time detection.
 
 #Conclusion
