@@ -1,23 +1,25 @@
-Image Classification Project Report
-Project Overview
+#Project Overview
+
 This project focuses on developing an image classification model using deep learning techniques to identify objects in low-light conditions. The model is trained on the ExDark dataset, which contains images of various objects in extremely low-light environments.
-Key Technologies and Libraries
+
+#Key Technologies and Libraries
 
 TensorFlow and Keras for deep learning
 MobileNetV2 as the base model (transfer learning)
 Image preprocessing and data augmentation techniques
 
-Dataset
+#Dataset
 
 Name: ExDark (Exclusively Dark Image Dataset)
 Location: F:\CapstoneProject\capstone\mainFolder\ExDark\ExDark
 Classes: 12 (Bicycle, Boat, Bottle, Bus, Car, Cat, Chair, Cup, Dog, Moterbike, People, Table)
 Total Images: 6,860
 
-Model Architecture
+#Model Architecture
 
 Base Model: MobileNetV2 (pre-trained on ImageNet)
-Additional Layers:
+
+#Additional Layers:
 
 Global Average Pooling
 Dense layer (256 units) with ReLU activation
@@ -26,7 +28,7 @@ Output Dense layer (12 units) with Softmax activation
 
 
 
-Implementation Details
+#Implementation Details
 
 Data Preprocessing:
 
@@ -56,19 +58,20 @@ Final accuracy: 73.94%
 
 
 
-Challenges and Solutions
+#Challenges
 
 Low-light Conditions: The ExDark dataset specifically focuses on extremely dark environments, making object recognition challenging. Solution: Utilizing a pre-trained model (MobileNetV2) helped in extracting relevant features even in low-light conditions.
-Limited Dataset Size: With only 6,860 images, overfitting was a concern. Solutions:
+Limited Dataset Size: With only 6,860 images, overfitting was a concern. 
+
+#Solutions:
 
 Data augmentation to artificially increase the dataset size
 Transfer learning to leverage pre-trained weights
 Dropout layer to reduce overfitting
 
-
 Computational Resources: GPUs were utilized to speed up the training process, with memory growth settings optimized to prevent out-of-memory errors.
 
-Future Improvements
+#Future Improvements
 
 Fine-tuning the base model layers after initial training
 Experimenting with other state-of-the-art architectures (e.g., EfficientNet)
